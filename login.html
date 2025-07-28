@@ -10,21 +10,25 @@
             background-color: bisque;
         }
 
-        div{
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .form{
             background-color: cadetblue;
             border: 3px solid black;
-            border-radius: 5px;
-            width: fit-content;
-            padding: 20px;
-            margin-left: 650px;
-            margin-top: 250px;
+            border-radius: 10px;
+            padding: 50px;
         }
 
         button{
             padding: 15px,5px;
             margin-left: 100px;
             background-color:paleturquoise;
-            cursor: pointer;;
+            cursor: pointer;
             font-weight: bold;
         }
 
@@ -42,8 +46,8 @@
     </style>
 </head>
 <body>
-    <div>
-        <form>
+    <div class="container">
+        <form class="form" action="signup" method="post">
             <label>Email : </label>
             <input type="email" name="email">
             <br><br>
@@ -52,7 +56,7 @@
             <input type="password" name="password">
             <br><br>
             
-            <button>Login</button>
+            <button type="submit">Login</button>
         </form>
     </div>
 </body>
