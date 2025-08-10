@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
         table {
             width: 50%;
             height: 50vh;
             text-align: center;
+        }
+
+        .tr:hover{
+            background-color: #f5f5;
         }
 
         .completed {
@@ -53,21 +66,32 @@
         }
 
         .markred{
+            border: none;
             background-color: rgb(250, 211, 211);
             border-radius: 5px;
             padding: 5px;
         }
 
+        .markred:hover{
+            background-color: rgb(255, 150, 150);
+        }
+
         .markblue{
+            border: none;
             background-color: rgb(208, 208, 255);
             border-radius: 5px;
             padding: 5px;
+        }
+
+        .markblue:hover{
+            background-color: rgb(150, 150, 255);
         }
     </style>
 
 </head>
 
 <body>
+    <h1>Table Data</h1>
     <table>
         <tr>
             <th>ID</th>
@@ -77,58 +101,78 @@
             <th>Action</th>
         </tr>
 
-        <tr>
+        <tr class="tr">
             <td>1</td>
             <td><img src="table1.jpeg"> Michael Holz</td>
             <td>Jun 15,2020</td>
             <td><mark class="completed">Completed</mark></td>
             <td>
-                <mark class="markred"><i class="trash fa fa-trash"></i></mark>
-                <mark class="markblue"><i class="edit fa-solid fa-edit"></i></mark>
+                <button class="markred">
+                    <i class="trash fa fa-trash"></i>
+                </button>
+                <button class="markblue">
+                    <i class="edit fa fa-edit"></i>
+                </button>
             </td>
         </tr>
 
-        <tr>
+        <tr class="tr">
             <td>2</td>
             <td><img src="table2.jpeg"> Paula Wilson</td>
             <td>Jun 21,2020</td>
             <td><mark class="cancelled">Cancelled</mark></td>
             <td>
-                <mark class="markred"><i class="trash fa fa-trash"></i></mark>
-                <mark class="markblue"><i class="edit fa-solid fa-edit"></i></mark>
+                <button class="markred">
+                    <i class="trash fa fa-trash"></i>
+                </button>
+                <button class="markblue">
+                    <i class="edit fa fa-edit"></i>
+                </button>
             </td>
         </tr>
 
-        <tr>
+        <tr class="tr">
             <td>3</td>
             <td><img src="table3.jpeg"> Antonio Moreno</td>
             <td>Jun 4,2020</td>
             <td><mark class="pending">Pending</mark></td>
             <td>
-                <mark class="markred"><i class="trash fa fa-trash"></i></mark>
-                <mark class="markblue"><i class="edit fa-solid fa-edit"></i></mark>
+                <button class="markred">
+                    <i class="trash fa fa-trash"></i>
+                </button>
+                <button class="markblue">
+                    <i class="edit fa fa-edit"></i>
+                </button>
             </td>
         </tr>
 
-        <tr>
+        <tr class="tr">
             <td>4</td>
             <td><img src="table4.jpeg"> Mary Saveley</td>
             <td>Jun 16,2020</td>
             <td><mark class="completed">Completed</mark></td>
             <td>
-                <mark class="markred"><i class="trash fa fa-trash"></i></mark>
-                <mark class="markblue"><i class="edit fa-solid fa-edit"></i></mark>
+                <button class="markred">
+                    <i class="trash fa fa-trash"></i>
+                </button>
+                <button class="markblue">
+                    <i class="edit fa fa-edit"></i>
+                </button>
             </td>
         </tr>
 
-        <tr>
+        <tr class="tr">
             <td>5</td>
             <td><img src="table5.jpeg"> Martin Sommer</td>
             <td>Aug 4,2020</td>
             <td><mark class="completed">Completed</mark></td>
             <td>
-                <mark class="markred"><i class="trash fa fa-trash"></i></mark>
-                <mark class="markblue"><i class="edit fa-solid fa-edit"></i></mark>
+                <button class="markred">
+                    <i class="trash fa fa-trash"></i>
+                </button>
+                <button class="markblue">
+                    <i class="edit fa fa-edit"></i>
+                </button>
             </td>
         </tr>
     </table>
